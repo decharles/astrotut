@@ -1,5 +1,5 @@
 ---
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
@@ -43,7 +43,7 @@ const textCase = "Uppercase";
     </style>
   </head>
   <body>
-    <Navigation />
+    <Header />
     <h1>{pageTitle}</h1>
     <h2>About me and my new Astro website</h2>
     <p>
@@ -83,5 +83,8 @@ const textCase = "Uppercase";
       )
     }
     <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
